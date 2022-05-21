@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="box-example">
+            <h1 class="blue">Comisión 9i</h1>
+        </div>
+        <img src="./comision.jpg" alt="Comision 9i">
+    </header>
+    <section>
+        <h2 id="acerca">Acerca de mí</h2>
+        <article>
+            <p>Esta es mi Información</p>
+        </article>
+    </section>
+    <section>
+        <h2 id="portfolio">Portfolio</h2>
+        <article>
+            <h3 class="blue">Título del proyecto</h3>
+            <p>Descripción del proyecto</p>
+            <a href="">Enlace del proyecto</a>
+        </article>
+        <article>
+            <h3 class="green">Título del proyecto</h3>
+            <p>Descripción del proyecto</p>
+            <a href="">Enlace del proyecto</a>
+        </article>
+        <article>
+            <h3 class="orange">Título del proyecto</h3>
+            <p>Descripción del proyecto</p>
+            <a href="">Enlace del proyecto</a>
+        </article>
+    </section>
+    <footer>
+        <h2 id="contacto">Contacto</h2>
+        <form action="https://formspree.io/f/xvoldrwl" method="POST">
+            <label for="name">Nombre:</label> 
+            <input type="text" name="name" required placeholder="Ingresa tu nombre"><br><br>
+            <label for="email">Email:</label> 
+            <input type="email" name="email" required placeholder="info@gmail.com"><br><br>
+            <label for="message">Mensaje</label>
+            <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea><br><br>
+            <button type="submit">Enviar</button>
+</form>
+    </footer>
+</body>
+</html>
