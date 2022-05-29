@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <!--Aqui modifico-->
     <header class="header-container">
-        <img src="./comision.jpg" alt="Comision 9i">
-        <h1 class="blue">Comisión 9i</h1>
+        <img src="./imgperfil.jpg" alt="Comision 9i">
+        <h1 class="blue">Fernanda Salica</h1>
         <nav>
             <ul>
                 <li><a href="#acerca">Acerca de mí</a></li>
@@ -20,41 +22,54 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="container">
         <h2 id="acerca">Acerca de mí</h2>
         <article>
-            <p>Esta es mi Información</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aut ut officia eaque nesciunt iusto consequatur repellendus, exercitationem saepe quis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur nesciunt quibusdam ratione incidunt quo nemo eos sit culpa voluptate.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda natus impedit itaque doloremque ipsa exercitationem quisquam eius sint fugiat.
+            </p>
         </article>
     </section>
-    <section>
+    <section class="container">
         <h2 id="portfolio">Portfolio</h2>
-        <article>
-            <h3 class="blue">Título del proyecto</h3>
-            <p>Descripción del proyecto</p>
+        <article class="proyect">
+            <h3>Título del proyecto</h3>
+            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
             <a href="">Enlace del proyecto</a>
         </article>
-        <article>
-            <h3 class="green">Título del proyecto</h3>
-            <p>Descripción del proyecto</p>
+        <article class="proyect">
+            <h3>Título del proyecto</h3>
+            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
             <a href="">Enlace del proyecto</a>
         </article>
-        <article>
-            <h3 class="orange">Título del proyecto</h3>
-            <p>Descripción del proyecto</p>
+        <article class="proyect">
+            <h3>Título del proyecto</h3>
+            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
             <a href="">Enlace del proyecto</a>
         </article>
     </section>
-    <footer>
+    <section class="container">
         <h2 id="contacto">Contacto</h2>
         <form action="https://formspree.io/f/xvoldrwl" method="POST">
             <label for="name">Nombre:</label> 
-            <input type="text" name="name" required placeholder="Ingresa tu nombre"><br><br>
+            <input type="text" name="name" required placeholder="Ingresa tu nombre">
             <label for="email">Email:</label> 
-            <input type="email" name="email" required placeholder="info@gmail.com"><br><br>
+            <input type="email" name="email" required placeholder="info@gmail.com">
             <label for="message">Mensaje</label>
-            <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea><br><br>
+            <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea>
             <button type="submit">Enviar</button>
-</form>
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <p>Iconos sociales</p>
+        </div>
     </footer>
 </body>
 </html>
