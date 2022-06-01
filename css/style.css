@@ -2,47 +2,142 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header-container {
+.container-header {
     width: 100%;
     height: 100px;
     display: flex;
-    background-color: #15133C;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#33485F;
 }
 
-.header-container h1 {
-    color: #73777B;
+h1 {
+    color: white;
 }
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #06BC9B;
+}
+
+.container-header img {
+    width: 120px;
+    height: 100px;
+}
+
+ nav ul {
+    display: flex;
+ }
+
+ nav a {
+     margin: 10px;
+ }
 
 .container {
     width: 100%;
     height: 100%;
     margin-top: 10px;
     padding: 20px;
+    background-color: #cbcad144;
 }
 
 .container h2, h3, p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
 
 .proyect {
     margin-bottom: 30px;
 }
 
+.container a {
+    color: #06BC9B;
+}
+
 .container a:hover {
-    color: #73777B;
+    color: #33485F;
 }
 
-.footer {
-    background-color: #15133C;
+.contact {
     display: flex;
+    flex-direction: column; /* No se acomodan en columnas los items*/
 }
 
-.footer p {
+.contact h2 {
+    text-align: center;
+}
+
+ form label {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: start;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+form textarea {
+    border-radius: 5px;
+    width: 300px;
+}
+
+footer {
+    height: 100px;
+    background-color:#33485F;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    align-items: center;    
+    justify-content: right;
+}
+
+footer a {
+    color: white;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: #06BC9B;
+}
+
+.flex-grow {
+    flex-grow: 10;
+}
+
+.icons {
+    margin: 10px;
+}
+
+.btn {
+    margin: 10px;
+    border: 1px solid #06BC9B;
+    background: #06BC9B;
+    border-radius: 5px;
+    padding: 10px;
     color: white;
 }

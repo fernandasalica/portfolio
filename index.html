@@ -11,16 +11,18 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="header-container">
-        <img src="./imgperfil.jpg" alt="Comision 9i">
-        <h1 class="blue">Fernanda Salica</h1>
-        <nav>
-            <ul>
-                <li><a href="#acerca">Acerca de mí</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container-header">
+            <img src="./img/imgperfil.jpg" alt="Comision 9i">
+            <h1 class="blue">Fernanda Salica</h1>
+            <nav>
+                <ul>
+                    <li><a href="#acerca">Acerca de mí</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="container">
         <h2 id="acerca">Acerca de mí</h2>
@@ -49,27 +51,26 @@
             <a href="">Enlace del proyecto</a>
         </article>
     </section>
-    <section class="container">
+    <section class="contact">
         <h2 id="contacto">Contacto</h2>
         <form action="https://formspree.io/f/xvoldrwl" method="POST">
-            <label for="name">Nombre:</label> 
+            <label for="name">Nombre</label> 
             <input type="text" name="name" required placeholder="Ingresa tu nombre">
-            <label for="email">Email:</label> 
+            <label for="email">Email</label> 
             <input type="email" name="email" required placeholder="info@gmail.com">
             <label for="message">Mensaje</label>
             <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn">Enviar datos</button>
         </form>
     </section>
     <footer>
-        <div class="footer">
-            <ul>
-                <li><a href="#acerca">Acerca de mí</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <p>Iconos sociales</p>
-        </div>
+        <ul>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <p class="flex-grow"></p>
+        <p class="icons">Iconos sociales</p>
     </footer>
 </body>
 </html>
