@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- FONTAWSONW CDN-->
+    <script src="https://kit.fontawesome.com/1717e99136.js" crossorigin="anonymous"></script>
+
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <img src="./img/imgperfil.jpg" alt="Comision 9i">
-            <h1 class="blue">Fernanda Salica</h1>
+        <div class="header-container">
+            <h1>FS</h1>
             <nav>
                 <ul>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#acerca">Acerca de mí</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -24,53 +33,81 @@
             </nav>
         </div>
     </header>
-    <section class="container">
-        <h2 id="acerca">Acerca de mí</h2>
-        <article>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aut ut officia eaque nesciunt iusto consequatur repellendus, exercitationem saepe quis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur nesciunt quibusdam ratione incidunt quo nemo eos sit culpa voluptate.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda natus impedit itaque doloremque ipsa exercitationem quisquam eius sint fugiat.
-            </p>
-        </article>
-    </section>
-    <section class="container">
-        <h2 id="portfolio">Portfolio</h2>
-        <article class="proyect">
-            <h3>Título del proyecto</h3>
-            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
-            <a href="">Enlace del proyecto</a>
-        </article>
-        <article class="proyect">
-            <h3>Título del proyecto</h3>
-            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
-            <a href="">Enlace del proyecto</a>
-        </article>
-        <article class="proyect">
-            <h3>Título del proyecto</h3>
-            <p>Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, amet?</p>
-            <a href="">Enlace del proyecto</a>
-        </article>
-    </section>
-    <section class="contact">
-        <h2 id="contacto">Contacto</h2>
-        <form action="https://formspree.io/f/xvoldrwl" method="POST">
-            <label for="name">Nombre</label> 
-            <input type="text" name="name" required placeholder="Ingresa tu nombre">
-            <label for="email">Email</label> 
-            <input type="email" name="email" required placeholder="info@gmail.com">
-            <label for="message">Mensaje</label>
-            <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea>
-            <button type="submit" class="btn">Enviar datos</button>
-        </form>
-    </section>
+    <main>
+        <section class="hero-container">
+            <div class="hero-content">
+                <p>Hola, soy Fernanda,</p>
+                <p>te invito a que mires mis trabajos</p>
+                <a href="#portfolio">Ver portfolio<i class="fa-solid fa-arrow-right-from-arc"></i></a>
+            </div>
+        </section>
+        <section class="container" id="acerca">
+            <div class="about-title-container">
+                <h2>Acerca de mí</h2>
+                <hr>
+            </div>
+            <article class="about-container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aut ut officia eaque nesciunt iusto consequatur repellendus, exercitationem saepe quis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur nesciunt quibusdam ratione incidunt quo nemo eos sit culpa voluptate.
+                </p>
+                <img src="./img/imgperfil.jpg" alt="">
+            </article>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="about-title-container">
+                <h2>Portfolio</h2>
+                <hr>
+            </div>
+            <div class="proyect-container">
+                <article class="proyect">
+                    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <h3>Título del proyecto</h3>
+                    <p>Descripción del proyecto.</p>
+                    <a href="">Enlace del proyecto</a>
+                </article>
+                <article class="proyect">
+                    <img src="https://images.pexels.com/photos/7439134/pexels-photo-7439134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <h3>Título del proyecto</h3>
+                    <p>Descripción del proyecto</p>
+                    <a href="">Enlace del proyecto</a>
+                </article>
+                <article class="proyect">
+                    <img src="https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <h3>Título del proyecto</h3>
+                    <p>Descripción del proyecto.</p>
+                    <a href="">Enlace del proyecto</a>
+                </article>
+            </div>
+        </section>
+        <section class="container" id="contacto">
+            <div  class="about-title-container">
+                <h2>Contacto</h2>
+                <hr>
+                <form action="https://formspree.io/f/xvoldrwl" method="POST">
+                    <input type="text" name="name" required placeholder="Ingresa tu nombre">
+                    <input type="email" name="email" required placeholder="info@gmail.com">
+                    <textarea name="message" cols="30" rows="10" required placeholder="Tu mensaje"></textarea>
+                    <div class="btn-container">
+                        <button type="submit" class="btn">Enviar datos</button>               
+                    </div>
+                </form>     
+        </section>
+    </main>
     <footer>
-        <ul>
-            <li><a href="#acerca">Acerca de mí</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <p class="flex-grow"></p>
-        <p class="icons">Iconos sociales</p>
+        <div class="footer-container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <p class="flex-grow"></p>
+            <div class="socials">
+                <a href="http://facebook.com/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="http://github.com/" target="_blank"><i class="uil uil-github"></i></a>
+            </div>  
+        </div>
     </footer>
 </body>
 </html>
